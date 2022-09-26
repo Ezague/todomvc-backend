@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Flask",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "todomvc.py",
+                "FLASK_DEBUG": "1",
+                "DB_HOST": "localhost",
+                "DB_USER": "sander",
+                "DB_PASSWORD": "123",
+                "DB_NAME": "todomvc",
+                "DB_PORT": "3307"
+            },
+            "args": [
+                "run",
+                "--no-debugger"
+            ],
+            "jinja": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Flask Migrate",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "todomvc.py",
+                "FLASK_DEBUG": "1",
+                "DB_HOST": "localhost",
+                "DB_USER": "sander",
+                "DB_PASSWORD": "123",
+                "DB_NAME": "todomvc",
+                "DB_PORT": "3307"
+            },
+            "args": [
+                "db",
+                "migrate"
+            ],
+            "jinja": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Flask Upgrade",
+            "type": "python",
+            "request": "launch",
+            "module": "flask",
+            "env": {
+                "FLASK_APP": "todomvc.py",
+                "FLASK_DEBUG": "1",
+                "DB_HOST": "localhost",
+                "DB_USER": "sander",
+                "DB_PASSWORD": "123",
+                "DB_NAME": "todomvc",
+                "DB_PORT": "3307"
+            },
+            "args": [
+                "db",
+                "upgrade"
+            ],
+            "jinja": true,
+            "justMyCode": true
+        }
+    ]
+}
