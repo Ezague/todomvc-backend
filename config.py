@@ -1,4 +1,5 @@
 import os
+from urllib import request
 
 class Config(object):
     JWT_SECRET_KEY="secret"
